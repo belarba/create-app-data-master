@@ -7,11 +7,17 @@
       :required="required"
       :value="value"
       :error="dataError"
-      @change="onChange">
+      @change="onChange"
+    >
       <option disabled selected value="">Select a Category</option>
-      <option v-for="category in categories" :value="category.value" :key="category.value">{{ category.text }}</option>
+      <option
+        v-for="category in categories"
+        :value="category.value"
+        :key="category.value"
+        >{{ category.text }}</option
+      >
     </select>
-    
+
     <span v-if="dataError" class="errorMessage">{{ dataErrorMessage }}</span>
   </div>
 </template>
@@ -37,9 +43,9 @@ export default {
     }
   },
   methods: {
-    onChange (e) {
+    onChange(e) {
       this.dataError = false;
-      this.$emit('input', e.target.value);
+      this.$emit("input", e.target.value);
       this.$emit("touched");
     },
     validate() {
@@ -84,10 +90,9 @@ export default {
     }
   }
 
- option:first-child
-{
+  option:first-child {
     color: green;
-}
+  }
 
   input {
     padding: 15px;

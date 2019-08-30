@@ -1,14 +1,29 @@
 module.exports = {
   root: true,
-  env: {
-    node: true
+  extends: [
+    "plugin:vue/essential",
+    "@vue/prettier",
+    "plugin:testcafe/recommended"
+  ],
+  plugins: ["testcafe"],
+  ecmaFeatures: {
+    modules: true,
+    spread: true,
+    restParams: true
   },
-  extends: ["plugin:vue/essential", "@vue/prettier"],
+  env: {
+    browser: true,
+    node: true,
+    es6: true
+  },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+    "no-unused-vars": 2,
+    "no-undef": 2
   },
   parserOptions: {
-    parser: "babel-eslint"
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    }
   }
 };

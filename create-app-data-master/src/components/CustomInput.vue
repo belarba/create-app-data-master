@@ -54,7 +54,7 @@ export default {
       }
     },
     validate() {
-      if (this.required === true && this.value === '' ) {
+      if (this.required === true && this.value === "") {
         this.dataError = true;
         this.dataErrorMessage = "This field is required and must be filled";
       } else {
