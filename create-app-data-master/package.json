@@ -19,10 +19,10 @@
     "vue-sweetalert2": "^2.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-e2e-cypress": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.2.1",
@@ -32,7 +32,7 @@
     "node-sass": "^4.9.0",
     "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
-    "testcafe": "^1.4.1",
+    "testcafe": "^1.20.1",
     "testcafe-vue-selectors": "^3.1.0",
     "vue-template-compiler": "^2.6.10",
     "webpack-cli": "^3.3.7"
